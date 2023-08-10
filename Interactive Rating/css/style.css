@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 550px;
+    background-color: hsl(214, 11%, 12%);
+    border-radius: 2em;
+    padding: 2em;
+}
+
+.container-2 {
+    width: 400px;
+    background-color: hsl(214, 11%, 12%);
+    border-radius: 1em;
+    padding: 2em;
+}
+
+.container-2 p {
+    margin: 0;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+}
+
+.body img {
+    width: 180px;
+    padding-bottom: 1em;
+}
+
+.yourSelection {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 25px;
+    padding: 10px 15px;
+    color:hsl(25, 97%, 53%);
+}
+
+.thanks {
+    color: white;
+    font-size: 2em;
+    padding-top: 10px;
+}
+
+.appreciate {
+    color: hsl(216, 12%, 54%);
+    text-align: center;
+}
+
+.box h1{
+    color: white;
+}
+
+.box p {
+    color: hsl(216, 12%, 54%);
+}
+
+.circle {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    max-width: 60%;
+    max-height: 60%;
+    width: auto;
+    height: auto;
+}
+
+.submitButton {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    padding: 20px;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.submitText {
+    font-size: 20px;
+}
+
+.formclass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    gap: 20px;
+}
+
+.rating {
+    color: hsl(217, 12%, 63%);
+    width: 5em;
+    height: 5em;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.rating.clicked {
+    color: white;
+    background-color: hsl(217, 12%, 63%);
+}
+
+.ratings {
+    font-size: 25px;
+}
+
+.rating:hover {
+    color: white;
+    background-color:hsl(25, 97%, 53%);
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 350px;
+    }
+    .box {
+        width: 100%;
+    }
+
+    .formclass {
+        padding: 1em;
+    }
+
+    .rating {
+        width: 2.5em;
+        height: 2.5em;
+    }
+}
